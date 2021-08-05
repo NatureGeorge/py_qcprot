@@ -1,6 +1,8 @@
 # py_qcprot
 A cython-based wrapper of the QCP C-code for RMSD calculation
 
+> fork from <https://github.com/Bernhard10/py_qcprot>
+
 ## About
 
 This repository contains slightly modified C-code from http://theobald.brandeis.edu/QCP/ 
@@ -21,6 +23,13 @@ F-contiguouse arrays, but changes in the cython and c code are needed for C-cont
 # requires cython
 # pip install cython
 python setup.py install
+```
+
+or pip:
+
+```bash
+# NOTE: this is a fork from <https://github.com/Bernhard10/py_qcprot>
+pip install git+https://github.com/naturegeorge/py_qcprot.git#egg=py_qcprot
 ```
 
 ## Authors
