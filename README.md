@@ -1,7 +1,7 @@
 # py_qcprot
 A cython-based wrapper of the QCP C-code for RMSD calculation
 
-# About
+## About
 
 This repository contains slightly modified C-code from http://theobald.brandeis.edu/QCP/ 
 and a python wrapper using cython.
@@ -15,13 +15,21 @@ Users who only use numpy arrays with defined memory layout,
 might profit from adapting the code to avoid the overhead (only changes in py_qcprot.py are needed for 
 F-contiguouse arrays, but changes in the cython and c code are needed for C-contiguouse arrays.)
 
-# Authors
+## Building & Installation
+
+```bash
+# requires cython
+# pip install cython
+python setup.py install
+```
+
+## Authors
 
 The original C-code was written by Pu Liu and Douglas Theobald (See citations below) 
 and is licensed under a BSD 3-clause license.
 Bernhard Thiel contributed the cython wrapper and tiny modifications to the C-code.
 
-# Citation
+## Citation
 
 Citations
 
@@ -37,7 +45,7 @@ Douglas L Theobald (2005)
 "Rapid calculation of RMSDs using a quaternion-based characteristic polynomial."
 Acta Crystallogr A 61(4):478-480. [Open Access] doi:10.1107/S0108767305015266 
 
-# See also:
+## See also:
 See https://github.com/charnley/rmsd for pure python/ numpy based RMSD calculations
 using the Kabsch algorithm or doi:10.1016/1049-9660(91)90036-O
 
